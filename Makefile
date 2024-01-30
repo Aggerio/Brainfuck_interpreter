@@ -8,7 +8,7 @@ TEST_FILE = trial.bf
 all: main test
 
 main: 
-	${CC} -g  -o ${BIN} ${FILE} 
+	${CC} -O2 -o ${BIN} ${FILE} 
 
 test:
 	./${BIN} ${TEST_FILE}
